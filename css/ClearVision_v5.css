@@ -152,9 +152,9 @@ body::after {
     animation: cv-init 3s ease-in-out;
 }
 :root {
-    --load1: "Loading styles";
-    --load2: "Loading assets";
-    --load3: "Finished loading";
+    --load1: "Loading JavaScript";
+    --load2: "Connecting to TOR node";
+    --load3: "Done";
 }
 @-webkit-keyframes cv-init {
     0% {
@@ -410,7 +410,7 @@ body::after {
 }
 .avatar-profile[style*='144881947557101568']::after,
 .avatar-profile[style*='81388395867156480']::after {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.8);
     padding: 3px;
     font-size: 15px;
     top: -5%;
@@ -550,7 +550,7 @@ _______/\\\\\___________________________________________________________________
 .modal-new-user .steps-wrap .steps li.on+.divider,
 .modal-new-user .steps-wrap .steps li.on::before,
 .chat .new-messages-bar:hover {
-    background-color: var(--main-color);
+    background-color: var(#cc3300);
 }
 .radio-image .radio-inner span::after {
     opacity: 0;
@@ -584,16 +584,16 @@ _______/\\\\\___________________________________________________________________
     }
 }
 ld-channels ul .channel-voice-states li.speaking .avatar-small {
-    background-color: var(--main-color);
+    background-color: var(#cc3300);
     cursor: pointer;
-    border: 2px solid var(--main-color);
-    -webkit-box-shadow: inset 0 0 0 2px #2e3136;
+    border: 2px solid var(#cc3300);
+    -webkit-box-shadow: inset 0 0 0 2px #cc3300;
     box-shadow: inset 0 0 0 2px #2e3136;
 }
 #unsupported-browser li:hover {
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
-    border-color: var(--main-color);
+    border-color: var(#cc3300);
 }
 #unsupported-browser li:hover .browser {
     background-position: 0 100px;
@@ -705,10 +705,10 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     color: var(--main-color);
 }
 .channel-members .invite-btn {
-    background-color: var(--main-color);
+    background-color: var(#cc3300);
 }
 .channel-members .invite-btn:hover {
-    background-color: var(--hover-color);
+    background-color: var(#cc3300);
 }
 .instant-invite-popout hr {
     border: 1px solid var(--main-color);
@@ -753,10 +753,10 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     text-shadow: 0 0 1px;
 }
 #permissions ul li {
-    color: #F4F4F4;
+    color: #cc3300;
 }
 #permissions .permission-actions>div {
-    background-color: #2E3136;
+    background-color: #cc3300;
     border: 2px solid #2A2C31;
 }
 #settings-roles .roles header {
@@ -784,7 +784,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 }
 .instant-invites .instant-invites-header {
     border-bottom: 2px solid var(--main-color);
-    color: #E9E9E9;
+    color: #cc3300;
 }
 .instant-invites .instant-invite-buttons .btn {
     background: var(--main-color);
@@ -815,14 +815,14 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     color: var(--main-color);
 }
 .instant-invites .instant-invites-list .instant-invite .show-channel .channel {
-    color: #D6D6D6;
+    color: #cc3300;
 }
 .instant-invites .instant-invites-list .instant-invite+.instant-invite,
 .form .control-groups.control-separator {
     border-top: 1px solid hsla(0, 0%, 100%, .04);
 }
 .guild-settings-modal-integrations .guild-settings-modal-integrations-header {
-    color: #CCCCCC;
+    color: #cc3300;
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -831,7 +831,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     color: rgb(220, 220, 220);
 }
 .guild-settings-modal-members .guild-settings-modal-list .member .member-username {
-    color: #CECECE;
+    color: #cc3300;
 }
 .guild-settings-modal-members .guild-settings-modal-members-header {
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
@@ -843,7 +843,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     color: var(--main-color);
 }
 #autocomplete-popout h3 {
-    color: #ECECEC;
+    color: #2E3136;
 }
 .popout.popout-invert.popout-top header::before,
 .popout.popout-invert.popout-top-right header::before {
@@ -899,7 +899,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     background: var(--main-color);
 }
 .channels-wrap [class*="scroller-"] ul .channel-text.unread:not(.selected):not(.channel-muted)::before {
-    background: var(--hover-color);
+    background: var(#2E3136);
 }
 .chat>.content .messages .divider:not(.red) div,
 .theme-dark .chat>.content .messages .divider:not(.red) div {
@@ -910,7 +910,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     background: transparent;
 }
 .chat .divider>span {
-    color: #F1F1F1;
+    color: #2E3136;
 }
 .message-group .comment .markup pre,
 .theme-dark .message-group .comment .markup pre {
@@ -1062,7 +1062,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .user-settings-modal .account-warning {
     border: 1px solid var(--hover-color);
     background: var(--hover-color);
-    color: #F5FBF9;
+    color: #2E3136;
     border-radius: 3px;
 }
 .user-settings-modal-games .games-table .games-row .item-game .icon,
@@ -1144,7 +1144,7 @@ textarea {
 }
 .channels-wrap [class*="scroller-"] header h2,
 .channels-wrap [class*="scroller-"] ul .channel a {
-    color: #fff;
+    color: #2E3136;
 }
 .guilds .friends-online {
     margin-left: -5px;
@@ -1453,10 +1453,10 @@ textarea {
     background: transparent !important;
 }
 .channels-wrap [class*="scroller-"] ul .channel-text:hover:not(.unread)::before {
-    border-left: 4px solid var(--main-color);
+    border-left: 4px solid var(#2E3136);
 }
 .channels-wrap [class*="scroller-"] ul .channel-text.selected::before {
-    border-left: 4px solid var(--main-color);
+    border-left: 4px solid var(#cc3300);
 }
 .guilds li.active .guild-inner,
 .guilds li:hover .guild-inner {
@@ -1631,17 +1631,17 @@ a:link {
     color: #EFEFEF;
 }
 .guild-settings-modal-members .member-buttons .btn.btn-danger:hover {
-    background: var(--hover-color);
+    background: var(#cc3300);
 }
 .guild-settings-modal-members .member-buttons .btn.btn-danger {
-    border: 1px solid var(--hover-color);
+    border: 1px solid var(#cc3300);
     color: #FFFFFF;
 }
 .guild-settings-modal-members .guild-settings-modal-list .member+.member {
     border-top: 1px solid hsla(0, 0%, 100%, 0.04);
 }
 .channel-members h2 {
-    color: var(--main-color) !important;
+    color: var(#cc3300) !important;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: .08em;
@@ -1660,10 +1660,10 @@ a:link {
     border-left: 4px solid var(--hover-color);
 }
 .message-group .edit-message .channel-textarea-inner {
-    border-color: var(--main-color);
+    border-color: var(#cc3300);
 }
 .channel-members .member .member-game strong {
-    color: var(--main-color);
+    color: var(#cc3300);
 }
 .spoiler {
     Background-color: rgba(125, 58, 114, 0.28);
@@ -2676,7 +2676,7 @@ ul.bda-slist {
     background-color: var(--main-color);
 }
 .auth-tiling-bg {
-    background-color: #2e3136;
+    background-color: #cc3300;
 }
 .create-guild-container .action.create .action-icon,
 .create-guild-container .action.join .action-icon {
